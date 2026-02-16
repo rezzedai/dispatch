@@ -1,6 +1,6 @@
 # @rezzedai/dispatch
 
-**A lightweight MCP task server for Claude Code.** Create tasks, claim them, complete them. That's it.
+**A lightweight MCP task server for any MCP-compatible client.** Create tasks, claim them, complete them. Works with Claude Code, ChatGPT, Gemini, Cursor, Windsurf, Cline, or any tool supporting the MCP standard.
 
 ```json
 {
@@ -49,7 +49,7 @@ Then add to your Claude Code MCP config (`.claude.json` or `.mcp.json`):
 
 ## Quick Start
 
-Once configured, Claude Code can use dispatch naturally:
+Once configured, any MCP client can use dispatch naturally:
 
 > "Create a task to refactor the auth module"
 
@@ -164,9 +164,9 @@ You could manage tasks in `tasks.json`. But dispatch adds:
 | **Network** | None. No API calls, no telemetry. |
 | **Size** | < 300 lines of core logic |
 
-## Want More?
+## What's Next?
 
-dispatch manages tasks for one agent. [Rezzed Grid-as-a-Service](https://rezzed.ai) routes tasks across a team of specialized agents — with priority intelligence, message relay, mobile monitoring, and cost tracking.
+More tools coming from the @rezzedai toolkit. See [rezzed.ai](https://rezzed.ai) for updates.
 
 ## License
 
