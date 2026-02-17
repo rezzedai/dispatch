@@ -1,5 +1,5 @@
 {
-  "name": "@rezzedai/dispatch",
+  "name": "@rezzed.ai/dispatch",
   "version": "0.1.0",
   "description": "A lightweight MCP task server for Claude Code",
   "main": "dist/index.js",

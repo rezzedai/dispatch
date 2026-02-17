@@ -1,4 +1,4 @@
-# @rezzedai/dispatch
+# @rezzed.ai/dispatch
 
 **A lightweight MCP task server for any MCP-compatible client.** Create tasks, claim them, complete them. Works with Claude Code, ChatGPT, Gemini, Cursor, Windsurf, Cline, or any tool supporting the MCP standard.
 
@@ -7,7 +7,7 @@
   "mcpServers": {
     "dispatch": {
       "command": "npx",
-      "args": ["@rezzedai/dispatch"]
+      "args": ["@rezzed.ai/dispatch"]
     }
   }
 }
@@ -29,7 +29,7 @@ No accounts. No cloud. No config files. Just tasks.
 ## Install
 
 ```bash
-npm install -g @rezzedai/dispatch
+npm install -g @rezzed.ai/dispatch
 ```
 
 Then add to your Claude Code MCP config (`.claude.json` or `.mcp.json`):
@@ -39,7 +39,7 @@ Then add to your Claude Code MCP config (`.claude.json` or `.mcp.json`):
   "mcpServers": {
     "dispatch": {
       "command": "npx",
-      "args": ["@rezzedai/dispatch"]
+      "args": ["@rezzed.ai/dispatch"]
     }
   }
 }
@@ -151,7 +151,7 @@ You could manage tasks in `tasks.json`. But dispatch adds:
 - **Atomic operations** — SQLite transactions prevent corruption
 - **Status lifecycle** — Proper state machine with timestamps
 - **Query filtering** — Get tasks by status, by priority
-- **Zero config** — `npx @rezzedai/dispatch` and it works
+- **Zero config** — `npx @rezzed.ai/dispatch` and it works
 
 ## Technical Details
 
@@ -166,7 +166,7 @@ You could manage tasks in `tasks.json`. But dispatch adds:
 
 ## What's Next?
 
-More tools coming from the @rezzedai toolkit. See [rezzed.ai](https://rezzed.ai) for updates.
+More tools coming from the @rezzed.ai toolkit. See [rezzed.ai](https://rezzed.ai) for updates.
 
 ## License
 
