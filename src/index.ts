@@ -11,7 +11,7 @@ import { initDb, createTask, getTasks, claimTask, completeTask } from "./db.js";
 
 const server = new Server(
   {
-    name: "@rezzedai/dispatch",
+    name: "@rezzed.ai/dispatch",
     version: "0.1.0",
   },
   {
