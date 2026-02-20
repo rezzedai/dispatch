@@ -1,6 +1,6 @@
 # @rezzed.ai/dispatch
 
-**A lightweight MCP task server for any MCP-compatible client.** Create tasks, claim them, complete them. Works with Claude Code, ChatGPT, Gemini, Cursor, Windsurf, Cline, or any tool supporting the MCP standard.
+**Minimal MCP task server with transactional lifecycle semantics.** Create, claim, complete. Works with Claude Code, ChatGPT, Gemini, Cursor, Windsurf, Cline, or any tool supporting the MCP standard.
 
 ```json
 {
@@ -117,6 +117,14 @@ Mark a task as done.
 | `taskId` | string | Yes | The task ID to complete |
 | `result` | string | No | Summary of what was done (max 2000 chars) |
 
+## Design Constraints
+
+- Core logic under 300 lines — complexity ceiling is intentional
+- Atomic operations via SQLite transactions — no partial state
+- No cloud dependency, no telemetry, no network calls
+- Task claiming is transactional — no double-dispatch
+- Works with any MCP client — zero vendor lock-in
+
 ## Task Lifecycle
 
 ```
@@ -174,4 +182,4 @@ MIT
 
 ---
 
-Built by [Rezzed](https://rezzed.ai) — the AI product studio.
+**Built by:** [RezzedAI](https://rezzed.ai) — Infrastructure for bounded multi-agent systems.
